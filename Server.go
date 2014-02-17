@@ -115,7 +115,7 @@ func (s *Server) StopServer(){
 	close(s.heartbeat)
 	close(s.steppedDownFromLeadership)
 	*/
-	log.Println(s.Pid(),"Shutting down, term=",s.Term())
+	log.Println(s.Pid(),"Shutting down")
 }
 
 func (s *Server) Term() int{
